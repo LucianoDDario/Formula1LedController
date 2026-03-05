@@ -3,7 +3,7 @@
 #include <DNSServer.h>
 #include <WiFiManager.h>
 
-void configuraWifi(){
+void configWifi(){
 
   WiFiManager wifiManager;
 
