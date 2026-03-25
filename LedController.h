@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-#define LED_PIN 5
+#define LED_PIN 6
 #define NUM_LEDS 30
 
 CRGB leds[NUM_LEDS];
@@ -8,6 +8,7 @@ CRGB leds[NUM_LEDS];
 const CRGB corPetronas = CRGB(0, 161, 155);
 
 void setupLeds() {
+
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(50);
   FastLED.clear();
@@ -19,7 +20,7 @@ void updateLedsF1(String flag, bool active, char test) {
   if(!active && test == ' '){
     fill_solid(leds, NUM_LEDS, corPetronas);
   }else{
-    if (flag == "SAFETY CAR" || flag == "VSC" || test == 's') {
+    if (flag == "SAFETY_CAR" || flag == "VSC" || flag == "VSC_ENDING" ||test == 's') {
     //Piscar amarelo 2 vezes
     for(int j = 0; j < 2; j++) {
       fill_solid(leds, NUM_LEDS, CRGB::Yellow);
