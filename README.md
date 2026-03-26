@@ -1,4 +1,5 @@
 🏎️ F1 Race Control LED Indicator
+
 This project uses an ESP32 (or compatible board) to monitor Formula 1 race conditions in real-time. It connects to a bridge API to fetch flag status (Yellow, Red, Safety Car, etc.) and displays corresponding lighting patterns on a WS2812B LED strip.
 
 Este projeto utiliza um ESP32 (ou placa compatível) para monitorar as condições de uma corrida de Fórmula 1 em tempo real. Ele se conecta a uma API bridge para buscar o status das bandeiras (Amarela, Vermelha, Safety Car, etc.) e exibe padrões de iluminação correspondentes em uma fita de LED WS2812B.
