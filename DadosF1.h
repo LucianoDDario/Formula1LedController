@@ -1,7 +1,7 @@
 #include <HTTPClient.h>
 #include <NetworkClientSecure.h>
+#include "Secrets.h"
 
-const char* raceControlUrl = "https://f1-led-bridge.onrender.com/status";
 
 // Cria uma estrutura para retornar os dois valores juntos
 struct RaceData {
